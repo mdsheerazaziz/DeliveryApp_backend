@@ -18,6 +18,6 @@ from django.contrib import admin
 from delivery.food import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'home/', views.homepage),
+    url(r'$', views.homepage),
 
 ]
