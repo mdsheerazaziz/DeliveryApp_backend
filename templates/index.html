@@ -23,7 +23,7 @@
     <title>DeliveryApp</title>
 </head>
 
-<body>
+<body class="full">
 <div ng-controller="IndexController" ng-app="DeliveryApp">
     <div class="title_section">
         <div layout="row" flex="90" flex-offset="5" layout-align="space-between center" layout-gt-sm layout-gt-lg>
@@ -38,35 +38,39 @@
         </div>
     </div>
     <div class="main_section">
-        <div layout="column" flex="90" flex-offset="5">
-            <div class="main_heading">
-                <h1>Order Food Online in Malaysia</h1>
-            </div>
-            <div class="sub_heading">
-                <h3>Food delivery service from restaurants near you!</h3>
-            </div>
-            <div layout="row" class="search_resturant">
-                <div>
-                    <md-input-container>
-                        <label>City</label>
-                        <md-select ng-model="city">
-                            <md-option value="Kuala Lumpur">Kuala Lumpur</md-option>
-                            <md-option value="Penang">Penang</md-option>
-                        </md-select>
-                    </md-input-container>
+          
+           <div layout="column"  flex="90" flex-offset="5" >
+                <div class="main_heading">
+                    <h1>Order Food Online in Malaysia</h1>
                 </div>
-                <div>
-                    <md-input-container>
-                        <label>Enter an area</label>
-                        <input ng-model="user.title">
-                    </md-input-container>
+                <div class="sub_heading">
+                    <h3>Food delivery service from <br> restaurants near you!</h3>
                 </div>
-                <div>
-                    <md-button class="md-raised md-primary">Show Restaurant</md-button>
+                
+                <div layout="row" class="search_resturant">
+                    <div>
+                        <md-input-container>
+                            <label>City</label>
+                            <md-select ng-model="city">
+                                <md-option value="Kuala Lumpur">Kuala Lumpur</md-option>
+                                <md-option value="Penang">Penang</md-option>
+                            </md-select>
+                        </md-input-container>
+                    </div>
+                    <div>
+                        <md-input-container>
+                            <label>Enter an area</label>
+                            <input ng-model="user.title">
+                        </md-input-container>
+                    </div>
+                    <div>
+                        <md-button class="md-raised md-primary">Show Restaurant</md-button>
+                    </div>
                 </div>
+               
             </div>
-        </div>
     </div>
+    
 </div>
 </body>
 </html>

@@ -1,3 +1,6 @@
+body {
+    margin-top: 50px; 
+}
 .title_section {
   background-color: #ea5b35;
   padding: 10px 0px 10px 10px;
@@ -6,5 +9,18 @@
     text-align: right;
 }
 .main_section{
-    text-align: center;
+    
+    background:url('https://picassos.pizza/wp-content/uploads/2015/01/jpeg.jpg') no-repeat 0px 0px;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-ms-background-size:cover;
+	min-height:600px;
+	max-height: 700px;
+	
+
+}
+.search_resturant{
+	text-align: center;
 }
